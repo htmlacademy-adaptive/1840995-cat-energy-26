@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Oleg Nekrasov](https://up.htmlacademy.ru/adaptive/26/user/1840995).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
