@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
@@ -196,22 +197,22 @@
         <div class="addition-catalog__item">
           <dt class="addition-catalog__info">Сахарозаменитель</dt>
           <dd class="addition-catalog__text">1 упаковка (100 г)</dd>
-          <dd class="addition-catalog__number">200 Р.</dd>
+          <dd class="addition-catalog__text">200 Р.</dd>
         </div>
         <div class="addition-catalog__item">
           <dt class="addition-catalog__info">Питьевая вода</dt>
           <dd class="addition-catalog__text">5 литров</dd>
-          <dd class="addition-catalog__number">50 Р.</dd>
+          <dd class="addition-catalog__text">50 Р.</dd>
         </div>
         <div class="addition-catalog__item">
           <dt class="addition-catalog__info">Молоко</dt>
           <dd class="addition-catalog__text">1 литр</dd>
-          <dd class="addition-catalog__number">100 Р.</dd>
+          <dd class="addition-catalog__text">100 Р.</dd>
         </div>
         <div class="addition-catalog__item">
           <dt class="addition-catalog__info">Питьевая вода</dt>
           <dd class="addition-catalog__text">1 упаковка (30 г)</dd>
-          <dd class="addition-catalog__number">300 Р.</dd>
+          <dd class="addition-catalog__text">300 Р.</dd>
         </div>
       </dl>
       <div class="gift">
@@ -219,18 +220,44 @@
         <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
-    <div class="address__wrapper">
-      <div class="address">
+    <section class="address">
+      <div class="address__wrapper">
         <span class="visually-hidden">Адрес</span>
         <p class="address__welcome">приглашаем к сотрудничеству дилеров!</p>
         <p class="address__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-    </div>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCURjFF8lB" width="560" height="400" allowfullscreen="true"
+        style="position:relative;"></iframe>
+    </section>
   </main>
-  <footer>
-
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__logo">
+        <a class="main-footer__logo main-header__logo-text">
+          <img src="/source/img/logo-text.svg" width="101" height="18" alt="Магазин «Cat Energy».">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <span class="visually-hidden">Наши социальные сети.</span>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <span class="copyright__text">HTML Academy</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
   </footer>
-
 </body>
 
 </html>
