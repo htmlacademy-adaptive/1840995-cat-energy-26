@@ -22,13 +22,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
             <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a href="program.html">Подбор программы</a>
+            <a>Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -39,7 +39,7 @@
       <h1 class="module-promo__header">Подбор программы</h1>
       <p class="module-promo">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
-    <form action="#" method="post" class="module-form">
+    <form name="module" action="#" method="post" class="module-form">
       <fieldset class="personal-data">
         <legend><span class="visually-hidden">Данные кота.</span></legend>
         <ul class="personal-data__list">
@@ -110,7 +110,7 @@
             </label>
           </li>
         </ul>
-        <a href="#" class="send-button button">Отправить заявку</a>
+        <button type="button" class="send-button button">Отправить заявку</button>
       </fieldset>
     </form>
     <section class="address">
@@ -119,17 +119,14 @@
         <p class="address__welcome">приглашаем к сотрудничеству дилеров!</p>
         <p class="address__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCURjFF8lB" width="560" height="400" allowfullscreen="true"
-        style="position:relative;"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCURjFF8lB" width="560" height="400"></iframe>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo">
-        <a class="main-footer__logo main-header__logo-text">
-          <img src="/source/img/logo-text.svg" width="101" height="18" alt="Магазин «Cat Energy».">
-        </a>
-      </div>
+      <a class="main-footer__logo" href="index.html">
+        <img src="/source/img/logo-text.svg" width="101" height="18" alt="Магазин «Cat Energy».">
+      </a>
       <div class="main-footer__social social">
         <span class="visually-hidden">Наши социальные сети.</span>
         <ul class="social__list">
@@ -153,3 +150,5 @@
   </footer>
 
 </body>
+
+</html>
