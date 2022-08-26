@@ -1,21 +1,30 @@
-.oswald-upper() {
+.oswald-card() {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-}
-
-.address__welcome {
-  .oswald-upper();
-  color: #111111;
   font-size: 16px;
   line-height: 20px;
 }
 
-.address__street {
+.card {
+  padding-bottom: 11px;
+}
+
+.card__title {
+  .oswald-card();
+  color: #222222;
+}
+
+.card__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   color: #444444;
+}
+
+.order-button {
+  .oswald-card();
+  color: #ffffff;
 }
