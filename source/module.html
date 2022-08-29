@@ -10,10 +10,10 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo-mobile">
+    <a class="main-header__logo-mobile" href="index.html">
       <img src="/source/img/logo-mobile.svg" width="34" height="38" alt="Магазин «Cat Energy».">
     </a>
-    <a class="main-header__logo-text">
+    <a class="main-header__logo-text" href="index.html">
       <img src="/source/img/logo-text.svg" width="101" height="18" alt="Магазин «Cat Energy».">
     </a>
     <nav class="main-nav">
@@ -38,7 +38,7 @@
   <main class="main-container">
     <section class="module-promo">
       <h1 class="module-promo__header">Подбор программы</h1>
-      <p class="module-promo">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="module-promo__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
     <form name="module" action="#" method="post" class="module-form">
       <fieldset class="personal-data">
@@ -47,7 +47,7 @@
           <li class="personal-data__item">
             <label>
               <span class="personal-data__title">Имя:*</span>
-              <input class="personal-data__input" type="text" placeholder="БАРСИК" name="name" required>
+              <input class="personal-data__input" type="text" placeholder="Барсик" name="name" required>
             </label>
           </li>
           <li class="personal-data__item">
@@ -74,9 +74,9 @@
       </fieldset>
       <fieldset class="contacts">
         <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-        <label class="contacts__item">E-mail:*<input type="email" placeholder="kuklachev@gmail.com" name="email"
+        <label class="contacts__item">E-mail:*<input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" name="email"
             required></label>
-        <label class="contacts__item">Телефон:*<input type="tel" placeholder="8 (960) 900-60-90" name="tel"
+        <label class="contacts__item">Телефон:*<input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90" name="tel"
             required></label>
       </fieldset>
       <fieldset class="comments">
@@ -84,34 +84,35 @@
         <textarea name="comments__area" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
       </fieldset>
       <fieldset class="add-products">
-        <legend><span class="visually-hidden">Дополнительно</span></legend>
+        <legend class="add-products__title">Дополнительно</legend>
         <ul class="add-products__list">
           <li class="add-products__item">
             <label>
-              <span class="add-products__title">Сахарозаменитель</span>
+              <span class="add-products__info">Сахарозаменитель</span>
               <input class="add-products__input" type="checkbox" name="products" value="sweetener" checked>
             </label>
           </li>
           <li class="add-products__item">
             <label>
-              <span class="add-products__title">Питьевая вода</span>
+              <span class="add-products__info">Питьевая вода</span>
               <input class="add-products__input" type="checkbox" name="products" value="water">
             </label>
           </li>
           <li class="add-products__item">
             <label>
-              <span class="add-products__title">Молоко</span>
+              <span class="add-products__info">Молоко</span>
               <input class="add-products__input" type="checkbox" name="products" value="milk">
             </label>
           </li>
           <li class="add-products__item">
             <label>
-              <span class="add-products__title">Витамины</span>
+              <span class="add-products__info">Витамины</span>
               <input class="add-products__input" type="checkbox" name="products" value="vitamins">
             </label>
           </li>
         </ul>
         <button type="button" class="send-button button">Отправить заявку</button>
+        <p class="add-products__reminder">* — Обязательные поля</p>
       </fieldset>
     </form>
     <section class="address">
@@ -122,6 +123,7 @@
       </div>
       <iframe src="https://yandex.ru/map-widget/v1/-/CCURjFF8lB" width="560" height="400"></iframe>
     </section>
+
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
