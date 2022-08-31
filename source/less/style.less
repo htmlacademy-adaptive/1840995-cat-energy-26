@@ -12,7 +12,6 @@
 @import "./blocks/main-footer.less";
 @import "./blocks/catalog.less";
 @import "./blocks/card.less";
-@import "./blocks/catalog__more.less";
 @import "./blocks/addition-catalog.less";
 @import "./blocks/gift.less";
 @import "../less/variables.less";
@@ -22,49 +21,11 @@
 @import "./blocks/contacts.less";
 @import "./blocks/comments.less";
 @import "./blocks/add-products.less";
-
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: medium;
-  src: url("../fonts/oswaldmedium.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-style: medium;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
+@import "../less/fonts.less";
+@import "../less/blocks/button.less";
 
 body {
   font-family: "Arial", sans-serif;
 }
 
-.button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  background-color: #68b738;
-  font-size: 16px;
-  line-height: 20px;
-}
+
