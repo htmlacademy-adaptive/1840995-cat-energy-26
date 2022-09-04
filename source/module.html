@@ -41,43 +41,45 @@
       <p class="module-promo__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
     <form name="module" action="#" method="post" class="module-form">
-      <fieldset class="personal-data">
-        <legend><span class="visually-hidden">Данные кота.</span></legend>
-        <ul class="personal-data__list">
-          <li class="personal-data__item">
-            <label>
-              <span class="personal-data__title">Имя:*</span>
-              <input class="personal-data__input" type="text" placeholder="Барсик" name="name" required>
-            </label>
-          </li>
-          <li class="personal-data__item">
-            <label>
-              <span class="personal-data__title">Вес (кг):*</span>
-              <input class="personal-data__input" type="number" placeholder="7" name="weight" required>
-            </label>
-          </li>
-          <li class="personal-data__item">
-            <label>
-              <span class="personal-data__title">Возраст (лет):</span>
-              <input class="personal-data__input" type="number" placeholder="7" name="age" required></label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="radiobuttons">
-        <legend class="radiobuttons__title"><span class="visually-hidden">Тип программы.</span></legend>
-        <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs" checked
-            value="lose-weight">Похудение</label>
-        <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs"
-            value="get-weight">Набор массы</label>
-        <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs"
-            value="advice">Не знаю (Нужен ваш совет)</label>
-      </fieldset>
-      <fieldset class="contacts">
+      <div class="module__desktop-wrapper">
+        <fieldset class="personal-data">
+          <legend><span class="visually-hidden">Данные кота.</span></legend>
+          <ul class="personal-data__list">
+            <li class="personal-data__item">
+              <label>
+                <span class="personal-data__title">Имя:*</span>
+                <input class="personal-data__input" type="text" placeholder="Барсик" name="name" required>
+              </label>
+            </li>
+            <li class="personal-data__item">
+              <label>
+                <span class="personal-data__title">Вес (кг):*</span>
+                <input class="personal-data__input" type="number" placeholder="7" name="weight" required>
+              </label>
+            </li>
+            <li class="personal-data__item">
+              <label>
+                <span class="personal-data__title">Возраст (лет):</span>
+                <input class="personal-data__input" type="number" placeholder="7" name="age" required></label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="radiobuttons">
+          <legend class="radiobuttons__title"><span class="visually-hidden">Тип программы.</span></legend>
+          <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs" checked
+              value="lose-weight">Похудение</label>
+          <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs"
+              value="get-weight">Набор массы</label>
+          <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs"
+              value="advice">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+      </div>
+      <fieldset class="contacts page__contacts">
         <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-        <label class="contacts__item">E-mail:*<input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" name="email"
-            required></label>
-        <label class="contacts__item">Телефон:*<input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90" name="tel"
-            required></label>
+        <label class="contacts__item">E-mail:*<input class="contacts__input" type="email"
+            placeholder="kuklachev@gmail.com" name="email" required></label>
+        <label class="contacts__item">Телефон:*<input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90"
+            name="tel" required></label>
       </fieldset>
       <fieldset class="comments">
         <legend class="comments__title">Комментарий</legend>
@@ -111,8 +113,10 @@
             </label>
           </li>
         </ul>
-        <button type="button" class="send-button button">Отправить заявку</button>
-        <p class="add-products__reminder">* — Обязательные поля</p>
+        <div class="add-product__mini-wrapper">
+          <button type="button" class="send-button button">Отправить заявку</button>
+          <p class="add-products__reminder">* — Обязательные поля</p>
+        </div>
       </fieldset>
     </form>
     <section class="address">

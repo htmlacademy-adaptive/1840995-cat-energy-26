@@ -1,6 +1,21 @@
 .catalog__list {
   margin: 0;
   padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    row-gap: 60px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 245px 245px 245px;
+    row-gap: 63px;
+    column-gap: 80px;
+  }
 }
 
 .catalog__item {
@@ -17,8 +32,7 @@
 }
 
 .catalog__more {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin: 0 25px;
 }
 
 .catalog__more-title {

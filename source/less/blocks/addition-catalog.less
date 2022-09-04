@@ -1,6 +1,7 @@
 .addition-catalog__list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .addition-catalog__title {
@@ -24,4 +25,11 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+}
+
+.addition-catalog__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

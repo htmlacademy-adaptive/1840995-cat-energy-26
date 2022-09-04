@@ -1,6 +1,19 @@
 .advantages__list {
   margin: 0;
   padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    row-gap: 153px;
+    column-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .advantages__title {

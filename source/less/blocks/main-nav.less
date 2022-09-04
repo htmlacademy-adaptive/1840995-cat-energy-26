@@ -10,9 +10,28 @@
   background-color: #ffffff;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .main-nav__item {
   font-size: 20px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: 478px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
