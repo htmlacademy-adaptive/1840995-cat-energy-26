@@ -1,0 +1,31 @@
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    row-gap: 153px;
+    column-gap: 37px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantages__title {
+  .oswald-black();
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.advantages__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
