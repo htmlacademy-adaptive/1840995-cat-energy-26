@@ -1,6 +1,28 @@
+.radiobuttons {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  border: 1px solid #d9d9d9;
+  border-left: none;
+  border-right: none;
+
+  @media (min-width: @tablet-width) {
+    border: 1px solid #e7e7e7;
+    padding: 25px 0;
+    padding-left: 28px;
+  }
+}
+
 .radiobuttons__item {
   .oswald-upper();
   color: #222222;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

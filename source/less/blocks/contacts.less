@@ -1,7 +1,21 @@
+.contacts {
+  padding: 0;
+  border: none;
+  padding-bottom: 10px;
+}
+
 .contacts__title {
   .oswald-black;
   font-size: 24px;
   line-height: 26px;
+  margin: 0;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 76px;
+  }
 }
 
 .contacts__item,
@@ -10,4 +24,21 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  width: 100%;
+}
+
+.contacts__input {
+  padding: 15px;
+  padding-top: 14px;
+  padding-right: 0;
+}
+
+.contacts__item {
+  display: flex;
+  padding-bottom: 14px;
+}
+
+.contacts__item-title {
+  align-self: center;
+  padding-right: 11px;
 }
