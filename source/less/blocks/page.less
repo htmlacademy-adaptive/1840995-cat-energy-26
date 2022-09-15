@@ -176,6 +176,7 @@
 
 .page__result {
   padding: 20px;
+  padding-top: 0;
   display: flex;
   justify-content: space-between;
   min-width: 320px;
@@ -202,13 +203,13 @@
   padding: 0 66px;
   padding-bottom: 20px;
   display: flex;
-  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     align-items: flex-end;
     flex-direction: column;
     padding: 0;
     padding-right: 30px;
+    padding-top: 11px;
   }
 
   @media (min-width: @desktop-width) {
@@ -217,6 +218,7 @@
     margin: 0;
     padding-right: 0;
     padding-bottom: 75px;
+    justify-content: space-between;
   }
 }
 
