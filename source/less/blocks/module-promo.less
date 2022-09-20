@@ -1,15 +1,47 @@
 .module-promo {
   .oswald-black;
+  padding: 0 20px;
+  padding-top: 27px;
+  padding-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+    padding-top: 65px;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .module-promo__header {
   font-size: @title-size;
   line-height: @title-size;
   font-weight: inherit;
+  margin: 0;
+  padding-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 54px;
+  }
 }
 
 .module-promo__text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
+  text-align: left;
+  padding-right: 54px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 323px;
+    padding-right: 0;
+  }
 }

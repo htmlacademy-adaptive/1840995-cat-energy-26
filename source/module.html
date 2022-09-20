@@ -36,11 +36,11 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="module-promo">
+    <section class="module-promo page__module-promo">
       <h1 class="module-promo__header">Подбор программы</h1>
       <p class="module-promo__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
-    <form name="module" action="#" method="post" class="module-form">
+    <form class="page__container" name="module" action="#" method="post" class="module-form">
       <div class="module__desktop-wrapper">
         <fieldset class="personal-data">
           <legend><span class="visually-hidden">Данные кота.</span></legend>
@@ -64,7 +64,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="radiobuttons">
+        <fieldset class="radiobuttons page__radiobuttons">
           <legend class="radiobuttons__title"><span class="visually-hidden">Тип программы.</span></legend>
           <label class="radiobuttons__item"><input class="radiobuttons__input" type="radio" name="programs" checked
               value="lose-weight">Похудение</label>
@@ -76,45 +76,52 @@
       </div>
       <fieldset class="contacts page__contacts">
         <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-        <label class="contacts__item">E-mail:*<input class="contacts__input" type="email"
-            placeholder="kuklachev@gmail.com" name="email" required></label>
-        <label class="contacts__item">Телефон:*<input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90"
-            name="tel" required></label>
+        <div class="contacts__wrapper">
+          <label class="contacts__item">
+            <span class="contacts__item-title">E-mail:*</span>
+            <input class="contacts__input" type="email" placeholder="kuklachev@gmail.com" name="email" required>
+          </label>
+          <label class="contacts__item">
+            <span class="contacts__item-title">Телефон:*</span>
+            <input class="contacts__input" type="tel" placeholder="8 (960) 900-60-90" name="tel" required>
+          </label>
+        </div>
       </fieldset>
-      <fieldset class="comments">
+      <fieldset class="comments page__comments">
         <legend class="comments__title">Комментарий</legend>
-        <textarea name="comments__area" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+        <textarea class="comments__field" name="comments__area" cols="30" rows="10"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
-      <fieldset class="add-products">
+      <fieldset class="add-products page__add-products">
         <legend class="add-products__title">Дополнительно</legend>
         <ul class="add-products__list">
           <li class="add-products__item">
             <label>
-              <span class="add-products__info">Сахарозаменитель</span>
               <input class="add-products__input" type="checkbox" name="products" value="sweetener" checked>
+              <span class="add-products__info">Сахарозаменитель</span>
             </label>
           </li>
           <li class="add-products__item">
             <label>
-              <span class="add-products__info">Питьевая вода</span>
               <input class="add-products__input" type="checkbox" name="products" value="water">
+              <span class="add-products__info">Питьевая вода</span>
             </label>
           </li>
           <li class="add-products__item">
             <label>
-              <span class="add-products__info">Молоко</span>
               <input class="add-products__input" type="checkbox" name="products" value="milk">
+              <span class="add-products__info">Молоко</span>
             </label>
           </li>
           <li class="add-products__item">
             <label>
-              <span class="add-products__info">Витамины</span>
               <input class="add-products__input" type="checkbox" name="products" value="vitamins">
+              <span class="add-products__info">Витамины</span>
             </label>
           </li>
         </ul>
         <div class="add-product__mini-wrapper">
-          <button type="button" class="send-button button">Отправить заявку</button>
+          <button type="submit" class="button__send button">Отправить заявку</button>
           <p class="add-products__reminder">* — Обязательные поля</p>
         </div>
       </fieldset>
@@ -125,9 +132,8 @@
         <p class="address__welcome">приглашаем к сотрудничеству дилеров!</p>
         <p class="address__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCURjFF8lB" width="560" height="400"></iframe>
+      <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CCURjFF8lB" width="560" height="400"></iframe> -->
     </section>
-
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">

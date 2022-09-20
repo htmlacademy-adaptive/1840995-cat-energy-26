@@ -1,7 +1,29 @@
-.sum__description {
+.sum {
+  background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    background-color: @text-color;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #eaeaea;
+  }
+}
+
+.sum__text,
+.sum__number {
   .oswald-upper();
   font-size: 14px;
   line-height: 20px;
   margin: 0;
   padding: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+  }
 }

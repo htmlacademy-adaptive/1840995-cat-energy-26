@@ -1,7 +1,52 @@
+.personal-data {
+  margin: 0;
+  padding: 0;
+  border: none;
+  padding-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 52px;
+  }
+}
+
 .personal-data__input,
 .personal-data__title {
   .oswald-upper();
   color: #444444;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.personal-data__title {
+  align-self: center;
+  padding-right: 13px;
+}
+
+.personal-data__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.personal-data__input {
+  width: 100%;
+  padding: 14px 0;
+  padding-left: 15px;
+  border: 1px solid #e7e7e7;
+}
+
+.personal-data__item label {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 20px;
+  }
 }

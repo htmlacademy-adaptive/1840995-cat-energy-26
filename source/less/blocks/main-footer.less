@@ -2,22 +2,40 @@
   background-color: #f2f2f2;
 }
 
+.main-footer__logo {
+  padding-top: 39px;
+  padding-bottom: 32px;
+}
+
 .main-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
-    width: 708px;
+    min-width: 708px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
     padding: 0 30px;
     margin: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    min-width: 1220px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 110px;
     margin: auto;
   }
+}
+
+.main-footer__copyright {
+  min-width: 281px;
+  display: flex;
+  justify-content: space-between;
+  padding: 21px;
 }
